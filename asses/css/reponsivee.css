@@ -1,0 +1,339 @@
+/* PC */
+@media (min-width:992px) {
+    .mobile-menu{
+        display:none;
+    }
+}
+
+/* Tablet & mobile */
+@media (max-width:991.98px) {
+    /* An NAV */
+    .nav{
+        display:none;
+    }
+    .header{
+        min-width: 100%;
+    }
+    /* Chuyen logo vao giua */
+    .header-top{
+        position: relative;
+    }
+    .header__logo{
+        position: absolute;
+        left:50%;
+        translate:-50% -50%;
+    }
+    /* Căn lại ví trí của menu icon */
+    .header__menu{
+        width: 24px;
+        position: absolute;
+        left: 26px;
+        top: 35px;
+        color: #ffff;
+    }
+    /* overlay */
+    .menu-overlay{
+        background-color:rgba(0,0,0,0.3);
+        position: fixed;
+        inset: 0;
+        z-index: 1;
+        /* binh thuong an overlay  */
+        opacity: 0;
+        visibility: hidden;    
+        transition: 0.5s;
+    }
+        /* kiemtra checkbox */
+    .menu-checkbox:checked ~ .menu-overlay{
+        opacity:1;
+        visibility: visible;
+    }
+    /* code cho menu drawer */
+
+    .menu-drawer{
+        padding: 40px;
+        position: fixed;
+        inset: 0 40% 0 0;
+        background-color: #2e1919;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+    /* kiem tra neu checkbox duoc thuc hien se hien lai menu */
+    .menu-checkbox:checked ~ .menu-drawer{
+        transform: translateX(0);
+    }
+    /* menu top */
+    .menu__drawer-close{
+        width: 24px;
+        color:#ffff;
+    }
+    .menu-drawer__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } */
+    /* cho nav cach logo */
+    #nav__list--mobile{
+        margin-top: 25px;
+    }
+    .nav__link{
+        display: block;
+        font-size: 2rem;
+    }
+    .nav__link:hover{
+        background: #00ffff37;
+    }
+
+    /* hero */  
+    .hero{
+        flex-direction: column;
+        row-gap: 50px;
+    }  
+
+    .hero__content{
+        order:2;
+    }
+    .hero__media{
+        order:1;
+    }
+    .hero__content{
+        text-align: center;
+        margin: 20px auto 0;
+        width: 80%;
+    }
+    .hero__desc{
+       margin: 30px auto;
+    }
+    .hero__row{
+        justify-content: center;
+    }
+
+    /* =============SERVICE=================== */
+    
+    .service__row{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .service__img{
+        width: 842px;
+    }
+    .service__list{
+        text-align: center;
+        width: 90%;
+
+    }
+    .service-item{
+        width: 90%;
+    }
+    .service-item_body{
+        text-align: start;
+    }
+
+    /* work list */
+    .work__list{
+        grid-template-columns:1fr;
+        row-gap: 30px;
+    }
+
+    .about__row{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .about__img-small{
+        display: none;
+    }
+
+    .about__media{
+        width: 90%;
+    }
+    .about__img-large{
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .about-content{
+        text-align: center;
+        width: 90%;
+
+    }
+    .about-content_desc{
+        width: 100%;
+    }
+
+    /* Team LIST */
+
+    .team__list{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        text-align: center;
+
+    }
+    .team-item__thumb{
+        margin: 0 72px;
+    }
+    .install__inner--img{
+        display: none;
+    }
+    .install__content{
+        margin: 0 auto;
+    }
+
+    /* BLOG */
+
+    .blog__inner{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .blog__content{
+        order: 2;
+    }
+    .blog__list{
+        order:1;
+    }
+    .blog__content{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog__heading{
+        max-width: 90%;
+        
+    }
+}
+
+/* Tablet*/
+@media (min-width:768px) and (max-width:991.98px) {
+
+/* footer */
+.footer__colum--tablet{
+    display: none;
+} */
+
+.footer-top{
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+}
+/* an Cta action */
+.show-on-mobile{
+    display: none;
+}
+}
+
+/* /*mobile */
+ @media (max-width:767.98px){
+    .header__action{
+        display: none;
+    }
+    .header__menu{
+        top:16px;
+    }
+    .menu-drawer{
+        inset: 0 20% 0 0;
+    }
+    .nav__item{
+        list-style: none;
+    }
+    .separate{
+        border-top: 1.5px solid #8c8b8b;
+        margin-top: 10px;
+    }
+    /* hero */
+    .hero__img--small{
+        display: none;
+    }
+    .hero__img--large{
+        width: 100%;
+        height: auto;
+        margin: auto 0;
+    }
+    .hero__heading{
+        font-size: 3rem;
+    }
+    .hero__desc{
+        width: 100%;
+    }
+    .hero__row{
+        flex-direction: column;
+        row-gap: 38px;
+    }
+
+    /* WORK */
+    .work-desc{
+        width: 100%;
+    }
+    .work-desc{
+        padding: 20px;
+    }
+    /* about */
+    .section-heading{
+        font-size: 3rem;
+    }
+
+    /* service */
+    .service{
+        padding-top 70px;
+    }
+    .services__desc{
+        width: 100%;
+    }
+    .service__img{
+        width: 100%;
+        height: auto;
+    }
+    .about{
+        padding: 40px 0;
+
+    }
+    /* Team list */
+    .team__list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team-item__thumb{
+        margin: auto 0;
+    }
+  /* INSTALL */
+  .install{
+    margin: 40px 0;
+  }
+  .install__inner{
+    padding: 0 8px;
+  }
+  .install__content {
+    max-width: 250px;
+  }
+  .install__heading{
+    font-size: 2.5rem;
+
+  }
+  .install__desc{
+    min-width: 250px;
+  }
+  .install__row{
+    column-gap: 5px;
+  }
+
+  /* BLOG */
+
+  .blog__list{
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .blog__heading{
+    text-align: center;
+  }
+
+  /* APPOIMENT */
+  .appointment__inner{
+    padding: 30px 5px;
+  }
+
+  /* FOOTER */
+
+  .footer-top{
+    grid-template-columns:1fr;
+    row-gap: 30px;
+  }
+  .footer__coppy-desc{
+    padding: 20px;
+  }
+ } 
